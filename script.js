@@ -15,7 +15,7 @@ const spinner = document.getElementById("spinner");
 let total = 0;
 
 
-/* ================= SPINNER ================= */
+
 
 function showSpinner(){
   spinner.classList.remove("hidden");
@@ -26,7 +26,6 @@ function hideSpinner(){
 }
 
 
-/* ================= LOAD CATEGORY ================= */
 
 async function loadCategories(){
 
@@ -68,8 +67,6 @@ function displayCategories(categories){
 }
 
 
-/* ================= LOAD ALL PLANTS ================= */
-
 async function loadAllPlants(){
 
   showSpinner();
@@ -88,7 +85,7 @@ async function loadAllPlants(){
 }
 
 
-/* ================= CATEGORY PLANTS ================= */
+
 
 async function loadPlantsByCategory(id){
 
@@ -108,7 +105,7 @@ async function loadPlantsByCategory(id){
 }
 
 
-/* ================= DISPLAY PLANTS ================= */
+
 
 function displayPlants(plants){
 
@@ -142,8 +139,6 @@ function displayPlants(plants){
   });
 }
 
-
-/* ================= MODAL ================= */
 
 async function loadPlantDetails(id){
 
@@ -186,8 +181,6 @@ async function loadPlantDetails(id){
 }
 
 
-/* ================= CLOSE MODAL ================= */
-
 document
 .getElementById("close-modal")
 .addEventListener("click", () => {
@@ -205,7 +198,7 @@ window.onclick = function(event){
 }
 
 
-/* ================= ADD TO CART ================= */
+
 
 function addToCart(name, price){
 
@@ -241,7 +234,6 @@ function addToCart(name, price){
 }
 
 
-/* ================= INITIAL LOAD ================= */
 
 loadCategories();
 
