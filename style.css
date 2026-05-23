@@ -1,0 +1,538 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#e6f1e7;
+  color:#111;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  background:#0d7a34;
+  padding:15px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:white;
+  font-size:20px;
+  font-weight:600;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.nav-btn{
+  background:#f7c600;
+  border:none;
+  padding:10px 18px;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:#d3e7d6;
+  padding:35px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.hero-content{
+  width:45%;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero-content p{
+  font-size:15px;
+  color:#555;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.hero-content button{
+  background:#f7c600;
+  border:none;
+  padding:12px 22px;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.leaf{
+  width:220px;
+  height:170px;
+}
+
+.leaf img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ================= TREE SECTION ================= */
+
+.tree-section{
+  padding:50px 60px;
+  display:grid;
+  grid-template-columns:220px 1fr 230px;
+  gap:25px;
+  align-items:start;
+}
+
+/* ================= CATEGORY CARD ================= */
+
+.categories{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+
+  /* SAME HEIGHT LIKE TREE CARDS */
+  min-height:780px;
+}
+
+.categories h3{
+  font-size:20px;
+  margin-bottom:18px;
+}
+
+.categories button{
+  width:100%;
+  border:none;
+  background:none;
+  text-align:left;
+  padding:10px;
+  font-size:15px;
+  cursor:pointer;
+  margin-bottom:8px;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.categories button:hover{
+  background:#e7f5ea;
+}
+
+.categories button.active{
+  background:#0d7a34;
+  color:white;
+}
+
+/* ================= TREE CONTENT ================= */
+
+.tree-content h2{
+  text-align:center;
+  margin-bottom:25px;
+  font-size:32px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:10px;
+  padding:12px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  background:#ddd;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.card h3{
+  font-size:18px;
+  margin:12px 0;
+  cursor:pointer;
+}
+
+.card p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:6px;
+  line-height:1.5;
+}
+
+.card button{
+  width:100%;
+  background:#0d7a34;
+  border:none;
+  color:white;
+  padding:10px;
+  border-radius:25px;
+  font-size:14px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/* ================= YOUR CART ================= */
+
+.cart{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+
+  /* SAME HEIGHT LIKE TREE CARDS */
+  min-height:780px;
+}
+
+.cart h3{
+  font-size:20px;
+  margin-bottom:18px;
+}
+
+.cart-item{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  margin-bottom:12px;
+  gap:10px;
+}
+
+.remove-btn{
+  color:red;
+  cursor:pointer;
+  margin-left:8px;
+}
+
+.total{
+  margin-top:15px;
+  display:flex;
+  justify-content:space-between;
+  font-size:16px;
+  font-weight:bold;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+  padding:60px;
+}
+
+.about h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:34px;
+}
+
+.about-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:50px;
+}
+
+.about-img{
+  width:320px;
+  height:350px;
+}
+
+.about-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about-text{
+  width:40%;
+}
+
+.about-text p{
+  font-size:15px;
+  color:#555;
+  line-height:1.9;
+  margin-bottom:20px;
+}
+
+.about-text li{
+  font-size:15px;
+  margin-bottom:8px;
+}
+
+/* ================= IMPACT ================= */
+
+.impact{
+  background:#d2e7d4;
+  padding:60px;
+}
+
+.impact h2{
+  text-align:center;
+  margin-bottom:35px;
+  font-size:34px;
+}
+
+.impact-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.impact-card{
+  background:white;
+  text-align:center;
+  padding:35px;
+  border-radius:10px;
+}
+
+.impact-card h1{
+  color:#0d7a34;
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.impact-card p{
+  font-size:15px;
+}
+
+/* ================= DONATE ================= */
+
+.donate{
+  background:#06692b;
+  padding:70px 20px;
+  text-align:center;
+  color:white;
+}
+
+.donate h2{
+  margin-bottom:30px;
+  font-size:32px;
+}
+
+.donate-form{
+  width:420px;
+  background:#138238;
+  padding:22px;
+  border-radius:10px;
+  margin:auto;
+}
+
+.donate-form input{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border:none;
+  font-size:14px;
+  border-radius:5px;
+}
+
+.donate-form button{
+  width:100%;
+  padding:12px;
+  background:#f7c600;
+  border:none;
+  border-radius:25px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#04511f;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.modal-box{
+  width:420px;
+  background:white;
+  margin:80px auto;
+  padding:25px;
+  border-radius:12px;
+  position:relative;
+}
+
+#close-modal{
+  position:absolute;
+  right:18px;
+  top:10px;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* ================= SPINNER ================= */
+
+.spinner{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.loader{
+  width:60px;
+  height:60px;
+  border:6px solid #ddd;
+  border-top:6px solid #0d7a34;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+
+.hidden{
+  display:none;
+}
+
+@keyframes spin{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+  .tree-section{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-container{
+    flex-direction:column;
+  }
+
+  .about-text{
+    width:100%;
+  }
+
+  .impact-cards{
+    grid-template-columns:1fr;
+  }
+
+  .categories,
+  .cart{
+    min-height:auto;
+  }
+}
+
+@media(max-width:576px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:15px 20px;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+
+  .hero{
+    flex-direction:column;
+    gap:25px;
+    padding:30px 20px;
+  }
+
+  .hero-content{
+    width:100%;
+  }
+
+  .hero-content h1{
+    font-size:30px;
+  }
+
+  .hero-content p{
+    font-size:14px;
+  }
+
+  .leaf{
+    width:170px;
+    height:140px;
+  }
+
+  .tree-section{
+    padding:30px 20px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .about{
+    padding:40px 20px;
+  }
+
+  .about-img{
+    width:100%;
+    height:300px;
+  }
+
+  .impact{
+    padding:40px 20px;
+  }
+
+  .donate{
+    padding:50px 20px;
+  }
+
+  .donate-form{
+    width:100%;
+  }
+
+  .modal-box{
+    width:90%;
+  }
+}

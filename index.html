@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Earth</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav class="navbar">
+
+    <h2 class="logo">Green Earth</h2>
+
+    <ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Plant a Tree</a></li>
+    </ul>
+
+    <button class="nav-btn">Plant a Tree</button>
+
+  </nav>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="leaf left-leaf">
+      <img src="hero-leaf1.png" alt="">
+    </div>
+
+    <div class="hero-content">
+
+      <h1>Plant a Tree, Grow a Future</h1>
+
+      <p>
+        Join our mission to plant 1 million trees and make the Earth greener for future generations.
+      </p>
+
+      <button>Get Involved</button>
+
+    </div>
+
+    <div class="leaf right-leaf">
+      <img src="hero-leaf2.png" alt="">
+    </div>
+
+  </section>
+
+
+  <!-- ================= TREE SECTION ================= -->
+
+  <section class="tree-section">
+
+    <!-- CATEGORY -->
+
+    <aside class="categories">
+
+      <h3>Categories</h3>
+
+      <div id="category-container"></div>
+
+    </aside>
+
+
+    <!-- TREE CARD -->
+
+    <div class="tree-content">
+
+      <h2>Choose Your Trees</h2>
+
+      <div id="card-container" class="cards"></div>
+
+    </div>
+
+
+    <!-- CART -->
+
+    <aside class="cart">
+
+      <h3>Your Cart</h3>
+
+      <div id="cart-items"></div>
+
+      <hr>
+
+      <div class="total">
+        <span>Total</span>
+        <span id="total-price">0</span>
+      </div>
+
+    </aside>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section class="about">
+
+    <h2>About the Campaign</h2>
+
+    <div class="about-container">
+
+      <div class="about-img">
+        <img src="about.png" alt="">
+      </div>
+
+      <div class="about-text">
+
+        <p>
+          Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since we started, we've planted over 500,000 trees worldwide by aiding local campaigns and restoring forests.
+        </p>
+
+        <ul>
+          <li>Restoration of natural habitats</li>
+          <li>Improvement of air quality</li>
+          <li>Support for local communities</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= IMPACT ================= -->
+
+  <section class="impact">
+
+    <h2>Our Impact</h2>
+
+    <div class="impact-cards">
+
+      <div class="impact-card">
+        <h1>500K+</h1>
+        <p>Trees Planted</p>
+      </div>
+
+      <div class="impact-card">
+        <h1>120+</h1>
+        <p>Communities Involved</p>
+      </div>
+
+      <div class="impact-card">
+        <h1>30+</h1>
+        <p>Countries Reached</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FORM ================= -->
+
+  <section class="donate">
+
+    <h2>Plant a Tree Today</h2>
+
+    <form class="donate-form">
+
+      <input type="text" placeholder="Your Name">
+
+      <input type="email" placeholder="Your Email Address">
+
+      <input type="number" placeholder="Number of Trees">
+
+      <button type="submit">Donate Now</button>
+
+    </form>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>© 2025 Green Earth. All Rights Reserved.</p>
+
+  </footer>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div id="modal" class="modal">
+
+    <div class="modal-box">
+
+      <span id="close-modal">&times;</span>
+
+      <div id="modal-details"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= SPINNER ================= -->
+
+  <div id="spinner" class="spinner hidden">
+    <div class="loader"></div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
